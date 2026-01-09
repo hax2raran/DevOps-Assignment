@@ -117,9 +117,61 @@ NEXT_PUBLIC_API_URL=https://your-new-backend-url.com
    - The current backend URL being used
 
 ## API Endpoints
-
 - `GET /api/health`: Health check endpoint
   - Returns: `{"status": "healthy", "message": "Backend is running successfully"}`
 
 - `GET /api/message`: Get the integration message
   - Returns: `{"message": "You've successfully integrated the backend!"}`
+
+
+-------------------------------------------------------------------------------------
+
+
+
+## 🛠 DevOps Implementation - My Work 
+
+Frontend: http://localhost:3000
+
+Backend: http://localhost:8000/api/health
+
+
+###  Backend
+
+- Used FastAPI with `/api/health` and `/api/message` endpoints
+
+- Created multi-stage Dockerfile with non-root user
+
+- Verified backend APIs inside Docker container
+
+###  Frontend
+
+- Frontend built with Next.js
+
+- Used environment variables for backend URL
+
+- Containerized using multi-stage Dockerfile
+
+### Container Orchestration
+
+- Docker Compose used to run both services together
+
+- Internal service communication via Docker network (service names)
+
+### ⚙️ CI/CD Pipeline
+
+- Implemented GitHub Actions pipeline for:
+
+  - Backend build and Docker image build
+
+  - Frontend build and Docker image build
+
+- Pipeline triggers on pull requests to `develop`
+
+### How to Run End-to-End
+
+#### 1. Docker Compose
+```bash
+
+docker compose up --build
+
+
