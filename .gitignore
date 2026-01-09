@@ -1,13 +1,15 @@
-# Python
-__pycache__/
-*.pyc
-venv/
-
-# Node
+# Node / Next.js
 node_modules/
+.next/
+out/
 
-# Environment files
+# Env files
 .env
+.env.local
+
+# Python
+venv/
+__pycache__/
 
 # OS
 .DS_Store
