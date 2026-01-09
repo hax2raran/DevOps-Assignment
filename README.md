@@ -128,14 +128,14 @@ NEXT_PUBLIC_API_URL=https://your-new-backend-url.com
 
 
 
-## 🛠 DevOps Implementation - My Work 
+##  DevOps Implementation - My Work 
 
 Frontend: http://localhost:3000
 
 Backend: http://localhost:8000/api/health
 
 
-###  Backend
+### Backend
 
 - Used FastAPI with `/api/health` and `/api/message` endpoints
 
@@ -143,7 +143,7 @@ Backend: http://localhost:8000/api/health
 
 - Verified backend APIs inside Docker container
 
-###  Frontend
+### Frontend
 
 - Frontend built with Next.js
 
@@ -157,7 +157,7 @@ Backend: http://localhost:8000/api/health
 
 - Internal service communication via Docker network (service names)
 
-### ⚙️ CI/CD Pipeline
+### CI/CD Pipeline
 
 - Implemented GitHub Actions pipeline for:
 
